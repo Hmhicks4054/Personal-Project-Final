@@ -1,0 +1,47 @@
+"""__author__ = Herschel Hicks
+This is a program to show my knowledge I have learned in Python."""
+
+
+def input_number(message):
+    """"
+
+
+
+    """
+    while True:
+        try:
+            user_input = int(input(message))
+        except ValueError:
+            print("Not an integer! Try again.")
+            continue
+        else:
+            return user_input
+
+
+def main():
+    print("Welcome to my Integration Project!")
+
+
+continue_program = True
+while continue_program:
+    print("Enter choice for what you would like to see")
+    print("1. BMI calculator")
+    print("2. Area of a square calculator")
+    print("3. Quit")
+    break
+
+if input_number == 1:
+    import areaOFSqrCalc
+
+    areaOFSqrCalc.do_area_OF_Sqr_Calc()
+elif input_number == 2:
+    side = int(input("Enter the length of the side of a square to""get the "
+                     "area:"))
+elif input_number == 3:
+    continue_program = False
+else:
+    print("Invalid selection. Try again.")
+
+
+def calculate_area(side):
+    return side * side
